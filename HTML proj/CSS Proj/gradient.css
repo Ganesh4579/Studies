@@ -1,0 +1,10 @@
+.test{
+    height: 400px;
+    width:70%;
+    /*background:linear-gradient(to right,red,green,blue,purple);*/
+    background:radial-gradient(red,blue)
+}
+
+/*body{
+    background:linear-gradient(to bottom right,rgb(43, 143, 231),rgba(43, 143, 231,0))
+}*/

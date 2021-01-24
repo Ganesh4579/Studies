@@ -1,0 +1,24 @@
+.submit-button{
+    background-color: rgb(69, 84, 221);
+    margin: 10px 15px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    border :none;
+    font-weight: 200px;
+    font-size: 40px;
+    color: white;
+    padding: 10px 20px;
+    /*transition: background 1s ease-in;*/
+    /*-webkit-transition: all 2s ease;*/
+
+    /*transform: scale(2.3);
+    transform: translate(20px,30px);
+    transform: rotate(-30deg);*/
+
+    transform: skewY(30deg);
+
+}
+.submit-button:hover{
+    background-color: aqua;
+    padding: 10px 20px;
+    
+} 

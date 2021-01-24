@@ -1,0 +1,15 @@
+.link{
+    text-decoration:line-through;
+}
+body{
+    text-transform:capitalize;
+    text-align: justify;
+    font-size: 1.4em;
+    font-weight: 700;
+    font-style:ital ;
+    font-family: 'potta One';
+}
+.left{
+    padding-left: 20px;
+}
+

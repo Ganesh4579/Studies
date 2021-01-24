@@ -1,0 +1,9 @@
+#about-us-image{
+    height: 40vh;
+    width:50vw;
+    float: right;
+}
+
+.site-table {
+    display:inline-block;
+}

@@ -1,0 +1,19 @@
+#title {
+    color: red;
+}
+li:first-child{
+    color: green;
+}
+h2 + a{
+    color: violet;
+}
+
+textarea +button{
+    color: blue;
+}
+li:last-child{
+    color: violet;
+}
+li:nth-child(2){
+    color: blue;
+}  
