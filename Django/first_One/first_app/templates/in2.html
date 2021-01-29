@@ -1,0 +1,21 @@
+{% extends "in.html" %}
+
+{% block content %} 
+
+<p>My Third paragraph.</p> 
+<h1> {{a}} </h1>
+<h1> {{b}} </h1>
+
+<ol>
+    {% for i in lf %}
+        <li> {{i}} </li>
+    {% endfor %}
+</ol>
+
+{% if ans %}
+<h3> {{n1}} is big </h3>
+{% else %}
+<h3> {{n2}} is big </h3>
+{% endif %}
+
+{% endblock %}
