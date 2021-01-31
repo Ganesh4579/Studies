@@ -31,3 +31,50 @@ def rnd2(request):
 
 def img(request):
     return render(request,'img.html')
+
+def img1(request,ina):
+    imgname =str(ina)
+    imgname=imgname.lower()
+    ans= True if imgname == 'image1' else False
+    mydict ={
+        'img' : imgname,
+        'ans' : ans
+    }
+    return render(request,'img1.html',context=mydict)
+
+def form1(request):
+    return render(request,'form1.html')
+
+def fget(request):
+    md={
+        'method': request.method,
+        "Email" : request.GET['email'],
+        "pwd" : request.GET['pwd']
+    }
+    return JsonResponse(md)
+
+def fpost(request):
+    md={
+        'method': request.method,
+        "Email" : request.POST['email'],
+        "pwd" : request.POST['pwd']
+    }
+    return JsonResponse(md)
+
+from . form1 import *
+def dform(request):
+    if request.method == 'POST':
+        form=exform(request.POST)
+        if form.is_valid():
+            return HttpResponse(str("form submitted" +str(request.method)))
+        else:
+             dic={
+            'fo': form
+        }
+        return render(request,'dform.html',context=dic)
+    elif request.method =='GET':
+        form=exform()
+        dic={
+            'fo': form
+        }
+        return render(request,'dform.html',context=dic)

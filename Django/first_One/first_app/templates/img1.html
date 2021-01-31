@@ -29,25 +29,14 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3">
-            <img class="img-fluid" src="{% static "image1.jpeg" %}"
+    <h1>
+        Your image name is {{img}}
+    </h1>
+{% if ans %}
+    <img class="img-fluid" src="{% static "image1.jpeg" %}"
                 alt="Responsive image">
-        </div>
-        <div class="col-md-3">
-            <img class="img-fluid" src="{% static "image2.jpeg" %}"
-                alt="Responsive image">
-        </div>
-        <div class="col-md-3">
-            <img class="img-fluid" src="{% static "image3.jpeg" %}"
-                alt="Responsive image">
-        </div>
-        <div class="col-md-3">
-            <img class="img-fluid" src="{% static "image4.jpeg" %}"
-                alt="Responsive image">
-        </div>
-    </div>
-</div>
+{% else %}
+<img class="img-fluid" src="{% static "{{img}}.jpeg" %}"  alt="Responsive image">
+{% endif %}
+               
 {% endblock %}

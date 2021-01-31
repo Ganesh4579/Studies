@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Form</h1>
+<form method="POST">
+{% csrf_token %}
+{{ fo.as_p }}
+<button type="submit" class="btn btn-primary" style="margin: 1rem 10rem;position: absolute;">Submit</button>
+</form>
+
+</body>
+</html>
