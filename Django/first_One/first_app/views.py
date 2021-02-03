@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 
+
 # Create your views here.
 
 def func1(request):
@@ -78,3 +79,81 @@ def dform(request):
             'fo': form
         }
         return render(request,'dform.html',context=dic)
+    
+def dform1(request):
+    if request.method == 'POST':
+        form=exform(request.POST)
+        if form.is_valid():
+            dic={
+                'fo': form
+            }
+            if request.POST['Name'].isupper():
+                dic['c']=True
+                dic['s']='Form got submitted'
+                return render(request,'dform.html',context=dic)
+            else:
+                dic['w']=True
+                dic['e']='Name must be in uppercase'
+                return render(request,'dform.html',context=dic)
+                 
+        else:
+             dic={
+            'fo': form
+        }
+        return render(request,'dform.html',context=dic)
+    else:
+        form=exform()
+        dic={
+            'fo': form
+        }
+        return render(request,'dform.html',context=dic)
+    
+from . form2 import *
+import re
+def dform2(request):
+    if request.method == 'POST':
+        form=exform1(request.POST)
+        if form.is_valid():
+            dic={
+                'fo': form
+            }
+            err=list()
+            ef=False
+            if not request.POST['Name'].isupper():
+                ef=True
+                err.append('Name must be in upper case')
+                dic['l']=err
+                dic['ef']=ef
+                
+            if not re.search(request.POST['Email'],'^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'):
+                ef=True
+                err.append('Enter valid email')
+                dic['l']=err
+                dic['ef']=ef
+                
+            if  ef==False:
+                dic['c']=True
+                dic['s']='Form got submitted'
+                return render(request,'dform.html',context=dic)
+            else:
+                return render(request,'dform.html',context=dic)
+                 
+        else:
+             dic={
+            'fo': form
+        }
+        return render(request,'dform1.html',context=dic)
+    else:
+        form=exform1()
+        dic={
+            'fo': form
+        }
+        return render(request,'dform1.html',context=dic)
+    
+def n404(request,exception):
+    return render(request,'404.html')
+    
+from . import models
+
+def dbcon(request,emp_ID):
+    return HttpResponse('emp_ID :'+str(emp_ID))

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Second app
+        </title>
+    </head>
+    <body>
+        <ol>
+            {% for i in emp %}
+            <li><a href="second/{{i.emp_ID}}">{{i}}</a></li>
+            {% endfor %}
+        </ol>
+      <a href="{% url 'insert' %}">Insert Data</a>
+    </body>
+</html>
