@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends ""'signin.html' %}
+<html>
+    <head>
+       <title>homepage</title> 
+    </head>
+    <body>
+        {% block content %}
+        <form>
+            <input type="button" onclick="{%  url_for('auth.signin') %}" value="Sigin">
+            <input type="button" onclick="{%  url_for('auth.login') %}" value="login">
+        </form>
+    </body>
+</html>

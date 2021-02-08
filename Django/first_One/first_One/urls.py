@@ -24,6 +24,7 @@ urlpatterns = [
     path('first', include('first_app.urls')),
     path('second', include('second_app.urls')),
     path('emp/',getemployees.as_view())
+    #path('api/',api_emp.as_view()),
 ]
 
 # from django.conf.urls import handler404

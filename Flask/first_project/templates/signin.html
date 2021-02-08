@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>Signin</head>
+    <body>
+        {%  block content %}
+        <h1>Welcome</h1>
+        <h2>Here,You can post your Status and comments</h2>
+        {% endblock %}
+        <form method="POST" action="#">
+            <label for="un"></label>
+            <input type="text" name="username" id="un">
+            <label for="em"></label>
+            <input type="text" name="email" id="em">
+            <label for="pw"></label>
+            <input type="password" name="password" id="pw">
+            <input type="submit" name="login">
+        </form>
+    </body>
+</html>
