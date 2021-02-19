@@ -7,7 +7,7 @@ try:
     #p=open('sadsadsa.txt')
     raise dc('ghjgjh')
    
-except Exception as e:
+except dc as e:
     print('occ',type(e).__name__,e)
 #finally:
     #x=1/0

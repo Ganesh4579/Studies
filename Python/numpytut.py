@@ -9,10 +9,10 @@ print(f.shape)
 print(f.ndim)
 
 c=f.copy()
-v=w.view()
-f[0]=1000000
+v=f.view()
+f[0,0,2]=1000000
 c.base
-print(v)
+print(c)
 
 
 # %%

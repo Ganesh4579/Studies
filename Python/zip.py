@@ -7,6 +7,8 @@ x = zip(a, b)
 
 print(tuple(x),'\n')
 
-c=[(i,j) for i,j in zip(a,b)]
+c=[(i,j) for i,j in x]
       
 print(c)
+from collections import deque
+la=deque([1,1,1,1,1,1],10)

@@ -1,5 +1,6 @@
-f=open("Sm.txt")
-s=f.read()
+#f=open("Sm.txt")
+#Ws=f.read()
+s='Shift left by pushing zeros in from the right and let the leftmost bits fall off'
 d=dict()
 v=s.split()
 for i in v:

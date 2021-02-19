@@ -6,3 +6,5 @@ for itervar in [ 41, 12, 9, 74, 15]:
         break
     print("Loop:", itervar, smallest)
 print("Smallest:", smallest)
+import pdb; 
+breakpoint()
