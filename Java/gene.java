@@ -2,7 +2,7 @@
  * 
  */
 public class gene {
-    public static <t> Object me(t a) {
+    public static <t,y> Object me(t a,y b) {
         return a.getClass().getName();
     }
 
@@ -10,9 +10,9 @@ public class gene {
      * @param
      */
     public static void main(String[] args) {
-        System.out.println(me(29));
-        System.out.println(me(5.5455));
-        System.out.println(me("fhgf"));
+        System.out.println(me(29,45));
+        System.out.println(me(5.5455,"hjh"));
+        System.out.println(me("fhgf",7));
         exx<Integer> po = new exx<Integer>(20);
 
     }

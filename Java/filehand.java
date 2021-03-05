@@ -8,7 +8,7 @@ public class filehand {
     public static void main(String a[]) {
         try {
             File f = new File("test.txt");
-            FileWriter w = new FileWriter("test.txt");
+            FileWriter w = new FileWriter("test11.txt");
             Scanner r = new Scanner(f);
             if (f.createNewFile()) {
                 System.out.println("File created: " + f.getName());

@@ -4,7 +4,7 @@ public class encap {
         ex1 o1 = new ex1();
         o1.m1(5);
         System.out.println(o1.m2());
-
+        String r;
     }
 
 }
