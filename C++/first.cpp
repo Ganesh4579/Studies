@@ -1,8 +1,11 @@
 #include <iostream>
+#include <conio.h>
+
 using namespace std;
 
 int main()
 {
+    clrscr();
     cout << "HI\n";
 
     int d = 2;
@@ -15,4 +18,5 @@ int main()
     cin >> f;
     cout << f;
     return 0;
+    getch();
 }
