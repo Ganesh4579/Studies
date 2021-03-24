@@ -1,5 +1,6 @@
 import pac.*;
 import java.util.Scanner;
+import java.util.logging.LogManager;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -26,6 +27,7 @@ class fir {
         //in1 ob =new in1();
         //System.out.println(ob.xxx);
         System.out.println(pac.getName());
+        //LogManager.log("My Message");
 
     }
 }

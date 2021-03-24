@@ -9,4 +9,4 @@ if t==n:
 else:
     print('n')
     
-
+dir(len)
