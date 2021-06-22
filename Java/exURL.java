@@ -8,7 +8,8 @@ public class exURL {
         InputStream i=uc.getInputStream();
         int n;
         while((n=i.read()) != -1){
-            System.out.print(n);
+            //System.out.print(n);
         }
+        System.out.println((22e3d+"\n"+"dfdsf"));
     }
 }

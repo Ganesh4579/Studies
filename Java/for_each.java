@@ -4,6 +4,15 @@ public class for_each {
         for (String i : s) {
             System.out.println(i);
         }
+        System.out.println(new int[]{1,2});
 
+        int arr[]= new int[]{1,2,3,3};
+        System.out.println(arr);
+        System.out.println(arr.length);
+
+        int arr1[][];
+
+        arr1 = new int[][]{{1,2},{3,3}};
+        
     }
 }

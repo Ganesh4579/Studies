@@ -8,7 +8,10 @@ public class arrlist {
         }
         System.out.println(mylist);
         mylist.set(0,100);
-        System.out.println(mylist.get(0));
+        System.out.println(mylist.get(0)+"/n/n/n");
 
+        System.out.println(34.344343f );
+        System.out.println(34222222d );
+        System.out.println("\\" );
     }
 }

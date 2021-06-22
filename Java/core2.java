@@ -29,6 +29,7 @@ public class core2 {
         String sg = "Thu, Dec 31 1998 23:37:50";
         java.util.Date d = new SimpleDateFormat("E, MMM dd yyyy HH:mm:ss").parse(sg);
         System.out.println(d);
+       
 
     }
 

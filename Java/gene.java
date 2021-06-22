@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 /**
  * 
  */
@@ -8,12 +10,15 @@ public class gene {
 
     /**
      * @param
+     * @throws IOException
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println(me(29,45));
         System.out.println(me(5.5455,"hjh"));
         System.out.println(me("fhgf",7));
         exx<Integer> po = new exx<Integer>(20);
+        System.out.println(Runtime.getRuntime().exec("clear"));
+        System.out.println(Runtime.getRuntime().availableProcessors());
 
     }
 

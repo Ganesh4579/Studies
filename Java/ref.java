@@ -25,7 +25,8 @@ class chi extends par{
         p.boo();
         c.boo();
         System.out.println(p.a);
-        System.out.println(--p.a + --p.a);
+        System.out.println(p.getClass());
+     
     }
 
 }
