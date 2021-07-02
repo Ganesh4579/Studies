@@ -4,12 +4,6 @@ for(var i=0;i<7;i++){
     console.log(st);
     st=st+"#";
 }
-
-
-var st="";
-for(var i=0;i<8;i++){
-
-}
 */
 var n = 8,
   st = "";

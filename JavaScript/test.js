@@ -40,9 +40,21 @@ while (i <= 10) {
   //if(i%2!=0) console.log(i);
   i++;
 }
-i=0;
+i = 0;
 console.log(i);
 console.log(i++);
 console.log(i);
 
 console.log("\n\n");
+
+let arr = [1, 6, 2, 8, 9, 0]; //new Array();
+console.log(arr.toString());
+for (let i in arr) console.log(i);
+for (let i of arr) console.log(i);
+
+console.log("\n\n\n");
+
+let fu = function () {
+  console.log(arguments);
+};
+fu(1, 2, 3, 4, 5);
