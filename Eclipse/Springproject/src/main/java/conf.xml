@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"     xmlns:context="http://www.springframework.org/schema/context"
+xmlns:mvc="http://www.springframework.org/schema/mvc"     xmlns:tx="http://www.springframework.org/schema/tx"
+xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+
+<bean id="car" class="com.test.Springproject.car">
+<property name="s" value ="BMW"></property>
+<property name="parts">
+	<list value-type="java.lang.String">
+	<value>Door</value>
+	<value>Body</value>
+	<value>Seat</value>
+	<value>Steer-Ring</value>
+	</list>
+</property>
+</bean>
+<bean id="truck" class="com.test.Springproject.truck">
+<constructor-arg value="VOLVO"></constructor-arg>
+<!-- <property name="e" ref="engine"></property> -->
+<property name="e">
+<!-- id="engine" -->
+	<bean  class="com.test.Springproject.engine">
+<property name="model" value ="Hybrid-Engine"></property>
+</bean>
+</property>
+</bean>
+<bean id="engine" class="com.test.Springproject.engine">	
+<property name="model" value ="Hybrid-Engine"></property>
+</bean>
+
+<!-- 
+
+<bean id="bikeparent" class="com.test.Springproject.bike">
+<property name='a' value="45000"></property>
+</bean>
+
+<bean id="bike" class="com.test.Springproject.bike" parent="bikeparent">
+<property name='b' value="80000"></property>
+<property name='c' value="69000"></property>
+</bean> -->
+
+<context:component-scan base-package="com.test.Springproject"  ></context:component-scan>
+</beans>

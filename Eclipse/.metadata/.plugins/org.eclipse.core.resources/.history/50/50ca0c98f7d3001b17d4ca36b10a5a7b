@@ -1,0 +1,46 @@
+package algorithm.sorting;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class SelectionSort {
+
+	public static void doSort() {
+		int t, te;
+		int[] a = new int[15];
+
+		for (int i = 0; i < a.length; i++) {
+			a[i] = new Random().nextInt(100);
+		}
+		System.out.println("Before sorting\t" + Arrays.toString(a));
+
+		for (int i = 0; i < a.length; i++) {
+			t = i;
+			for (int j = i + 1; j < a.length; j++) {
+				if (a[t] > a[j])
+					t = j;
+			}break
+			if (t != i) {
+				te = a[i];
+				a[i] = a[t];
+				a[t] = te;
+			}
+		}
+		System.out.println("After sorting as ascending\t" + Arrays.toString(a));
+
+		for (int i = 0; i < a.length; i++) {
+			t = i;
+			for (int j = i + 1; j < a.length; j++) {
+				if (a[t] < a[j])
+					t = j;
+			}
+			if (t != i) {
+				te = a[i];
+				a[i] = a[t];
+				a[t] = te;
+			}
+		}
+		System.out.println("After sorting as descending\t" + Arrays.toString(a));
+
+	}
+}

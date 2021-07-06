@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/mnt/223658B236588925/Studies/Programs/Eclipse/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+4133856886.index
+420645641.index
+1584130741.index
+2531189871.index
+1125777877.index
+96842703.index

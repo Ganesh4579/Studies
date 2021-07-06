@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri May 14 17:57:08 IST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0179-6ad8-4221-0000024b4098 
+on database directory memory:/mnt/223658B236588925/Studies/Programs/Eclipse/springbootjpa/testdb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487 
+Loaded from file:/home/ganesh/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+java.vendor=Red Hat, Inc.
+java.runtime.version=11.0.11+9
+user.dir=/mnt/223658B236588925/Studies/Programs/Eclipse/springbootjpa
+os.name=Linux
+os.arch=amd64
+os.version=5.10.23-200.fc33.x86_64
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

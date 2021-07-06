@@ -1,0 +1,15 @@
+package mainpack;
+
+import algorithm.sorting.BubbleSort;
+import algorithm.sorting.InsertionSort;
+import algorithm.sorting.SelectionSort;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		//BubbleSort.doSort();
+		SelectionSort.doSort();
+		//InsertionSort.doSort();
+	}
+
+}
