@@ -5,7 +5,7 @@ with open('test.txt','w+') as f:
 f=open('test.txt','a+')
 print(f)
 print(f.mode)
-#print(f.readlines())
+print(f.readlines())
 f.seek(0)
 f.write('Thank You')
 f.seek(0)

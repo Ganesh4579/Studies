@@ -11,3 +11,4 @@ if arm(e):
     print('s')
 else:
     print('n')
+ 
